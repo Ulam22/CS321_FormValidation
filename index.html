@@ -10,17 +10,17 @@
 <body>
     <h1>Personal Information</h1>
     <form id="personalInfo">
-        First name: <input type="text" id="first" required><br><br>
+        First name: <input type="text" id="first" required aria-required="true"><br><br>
         Preferred name: <input type="text" id="preferred"><br><br>
-        Last name: <input type="text" id="last" required><br><br>
-        Email: <input type="email" id="email" required><br><br>
-        Phone number: <input type="text" id="phone" required><br><br>
+        Last name: <input type="text" id="last" required aria-required="true"><br><br>
+        Email: <input type="email" id="email" required aria-required="true"><br><br>
+        Phone number: <input type="text" id="phone" required aria-required="true"><br><br>
         <label for="dob" >Date of birth:</label>
         <input type="date" id="dob" name="dob"
         value="2000-01-01"
-        min="1900-01-01" max="2018-01-01" required><br><br>
+        min="1900-01-01" max="2018-01-01" required aria-required="true"><br><br>
         min="1900-01-01" max="2018-01-01"><br><br>
-        Home address: <input type="text" id="address"><br><br>
+        Home address: <input type="text" id="address" aria-required="true"><br><br>
         State/Province: 
         <select>
             <option value="AL">Alabama</option>
@@ -100,9 +100,9 @@
         <fieldset>
             <label for="accountEmail">Enter your email:</label>
             <input type="email" id="email"
-                   pattern=".+@globex.com" size="30" required><br></br>
+                    size="30" required aria-required="true"><br></br>
              <label for="pass">Password (8 characters minimum):</label>
-             <input type="password" id="pass" name="password" minlength="8" required>
+             <input type="password" id="pass" name="password" minlength="8" required aria-required="true">
         </fieldset><br><br>
         
         <input type="submit" type="button" value="Create Account">
