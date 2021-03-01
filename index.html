@@ -75,7 +75,6 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
         </select>	
-        
             <option value="AB">Alberta</option>
             <option value="BC">British Columbia</option>
             <option value="MB">Manitoba</option>
@@ -95,7 +94,19 @@
             <option value="US">United States</option>
             <option value="Canada">Canada</option>
         </select><br><br>
+        
+
+        <h1>Account Information</h1>
+        <fieldset>
+            <label for="accountEmail">Enter your email:</label>
+            <input type="email" id="email"
+                   pattern=".+@globex.com" size="30" required><br></br>
+             <label for="pass">Password (8 characters minimum):</label>
+             <input type="password" id="pass" name="password" minlength="8" required>
+        </fieldset><br><br>
+        
         <input type="submit" type="button" value="Create Account">
+        </select>
     </form>
 </body>
 </html>
