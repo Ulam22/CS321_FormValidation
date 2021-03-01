@@ -8,6 +8,7 @@
     <script src="form.js"></script>
 </head>
 <body>
+    <fieldset>
     <h1>Personal Information</h1>
     <form id="personalInfo">
         First name: <input type="text" id="first" required aria-required="true"><br><br>
@@ -94,17 +95,22 @@
             <option value="US">United States</option>
             <option value="Canada">Canada</option>
         </select><br><br>
-        
-
+        </fieldset> <br>
+<fieldset>
         <h1>Account Information</h1>
-        <fieldset>
+        
             <label for="accountEmail">Enter your email:</label>
             <input type="email" id="email"
                     size="30" required aria-required="true"><br></br>
              <label for="pass">Password (8 characters minimum):</label>
              <input type="password" id="pass" name="password" minlength="8" required aria-required="true">
-        </fieldset><br><br>
-        
+        </fieldset><br>
+        <fieldset>
+            <h1>Preferences</h1>
+            <span role="checkbox" id="chkPref" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+            tabindex="0" aria-labelledby="chk1-label"></span>
+         <label id="chk1-label" onclick="changeCheckbox()" onKeyPress="changeCheckbox()">Remember my preferences</label>
+        </fieldset> <br>
         <input type="submit" type="button" value="Create Account">
         </select>
     </form>
