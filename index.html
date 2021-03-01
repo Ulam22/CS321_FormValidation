@@ -21,8 +21,9 @@
         value="2000-01-01"
         min="1900-01-01" max="2018-01-01" required aria-required="true"><br><br>
         Home address: <input type="text" id="address" aria-required="true"><br><br>
-        State: 
+        State/Province: 
         <select>
+            <optgroup label="State">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -74,9 +75,8 @@
             <option value="WV">West Virginia</option>
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
-        </select>
-        Province:
-    	<select>
+            </optgroup>
+            <optgroup label="Province">
             <option value="AB">Alberta</option>
             <option value="BC">British Columbia</option>
             <option value="MB">Manitoba</option>
@@ -90,6 +90,7 @@
             <option value="NT">Northwest Territories</option>
             <option value="NU">Nunavut</option>
             <option value="YT">Yukon</option>
+            </optgroup>
         </select><br><br>
         Country: 
         <select>
