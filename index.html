@@ -11,6 +11,19 @@
     <form id="CreateAccount" method="post">
     <fieldset>
     <h1>Personal Information</h1>
+        Prefix:   
+                <input type="radio" id="Mr" name="prefix" value="Mr">
+                <label for="Mr">Mr. </label>
+                <input type="radio" id="Mrs" name="prefix" value="Mrs">
+                <label for="Mrs">Mrs. </label>
+                <input type="radio" id="Ms" name="prefix" value="Ms">
+                <label for="Ms">Ms. </label>
+                <input type="radio" id="Dr" name="prefix" value="Dr">
+                <label for="Dr">Dr. </label>
+                <input type="radio" id="Rev" name="prefix" value="Rev">
+                <label for="Rev">Rev. </label>
+                <input type="radio" id="NA" name="prefix" value="NA">
+                <label for="NA">N/A </label> <br></br>
         First name: <input type="text" id="first" required aria-required="true"><br><br>
         Preferred name: <input type="text" id="preferred"><br><br>
         Last name: <input type="text" id="last" required aria-required="true"><br><br>
@@ -100,7 +113,6 @@
         </fieldset> <br>
 <fieldset>
         <h1>Account Information</h1>
-        
             <label for="accountEmail">Enter your email:</label>
             <input type="email" id="email"
                     size="30" required aria-required="true"><br></br>
