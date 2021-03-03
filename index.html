@@ -11,7 +11,7 @@
     <form id="CreateAccount" method="post">
     <fieldset>
     <h1>Personal Information</h1>
-        Prefix:   
+        <label for="prefix">Prefix: </label> 
                 <input type="radio" id="Mr" name="prefix" value="Mr">
                 <label for="Mr">Mr. </label>
                 <input type="radio" id="Mrs" name="prefix" value="Mrs">
@@ -26,17 +26,19 @@
                 <label for="Rev">Rev. </label>
                 <input type="radio" id="NA" name="prefix" value="NA">
                 <label for="NA">N/A </label> <br></br>
-        First name: <input type="text" id="first" required aria-required="true"><br><br>
-        Preferred name: <input type="text" id="preferred"><br><br>
-        Last name: <input type="text" id="last" required aria-required="true"><br><br>
+        <label for="firstName">First name: </label><input type="text" id="first" required aria-required="true"><br><br>
+        <label for="preferredName">Preferred Name: </label><input type="text" id="preferred"><br><br>
+        <label for="lastName">Last name: </label><input type="text" id="last" required aria-required="true"><br><br>
         <!-- the age input is simply for number validation purposes -->
-        Age: <input type="text" id="age" ><br><br>
-        Phone number: <input type="text" id="phone" required aria-required="true"><br><br>
-        <label for="dob" >Date of birth:</label>
+        <label for="age">Age: </label><input type="text" id="age"><br><br>
+        <label for="phone">Phone number: </label><input type="tel" id="phone" required aria-required="true"><br><br>
+        <label for="dob">Date of birth:</label>
         <input type="date" id="dob" name="dob"
         value="2000-01-01"
         min="1900-01-01" max="2018-01-01" required aria-required="true"><br><br>
-        Home address: <input type="text" id="address" aria-required="true"><br><br>
+
+        <label for="address">Home address:</label>
+        <input type="text" id="address" aria-required="true"><br><br>
         State/Province: 
         <select>
             <optgroup label="State">
