@@ -28,3 +28,7 @@ nav li {
 nav a{
     text-decoration: none;
 }
+
+.required {
+    color:red;
+}
