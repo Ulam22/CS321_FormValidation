@@ -30,7 +30,7 @@ nav {
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding:.5rem 1rem;
+padding:0 2rem;
 }
 nav ul {
     padding:0;
