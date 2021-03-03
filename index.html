@@ -40,20 +40,20 @@
                 <label for="Rev">Rev. </label>
                 <input type="radio" id="NA" name="prefix" value="NA">
                 <label for="NA">N/A </label> <br></br>
-        <label for="firstName">First name: </label><input type="text" id="first" required aria-required="true"><br><br>
+        <label for="firstName"><span aria-hidden="true" class="required">*</span>First name: </label><input type="text" id="first" required aria-required="true"><br><br>
         <label for="preferredName">Preferred Name: </label><input type="text" id="preferred"><br><br>
-        <label for="lastName">Last name: </label><input type="text" id="last" required aria-required="true"><br><br>
+        <label for="lastName"><span aria-hidden="true" class="required">*</span>Last name: </label><input type="text" id="last" required aria-required="true"><br><br>
         <!-- the age input is simply for number validation purposes -->
         <label for="age">Age: </label><input type="text" id="age"><br><br>
         <label for="phone">Phone number: </label><input type="tel" id="phone" required aria-required="true"><br><br>
-        <label for="dob">Date of birth:</label>
+        <label for="dob"><span aria-hidden="true" class="required">*</span>Date of birth:</label>
         <input type="date" id="dob" name="dob"
         value="2000-01-01"
         min="1900-01-01" max="2018-01-01" required aria-required="true"><br><br>
 
-        <label for="address">Home address:</label>
+        <label for="address"><span aria-hidden="true" class="required">*</span>Home address:</label>
         <input type="text" id="address" aria-required="true"><br><br>
-        State/Province: 
+        <span aria-hidden="true" class="required">*</span>State/Province: 
         <select>
             <optgroup label="State">
             <option value="AL">Alabama</option>
@@ -124,7 +124,7 @@
             <option value="YT">Yukon</option>
             </optgroup>
         </select><br><br>
-        Country: 
+        <span aria-hidden="true" class="required">*</span>Country: 
         <select>
             <option value="US">United States</option>
             <option value="Canada">Canada</option>
@@ -132,12 +132,12 @@
         </fieldset> <br>
 <fieldset>
         <h1>Account Information</h1>
-            <label for="accountEmail">Enter your email:</label>
+            <label for="accountEmail"><span aria-hidden="true" class="required">*</span>Enter your email:</label>
             <input type="email" id="email"
                     size="30" required aria-required="true"><br></br>
-             <label for="pass">Password (8 characters minimum):</label>
+             <label for="pass"><span aria-hidden="true" class="required">*</span>Password (8 characters minimum):</label>
              <input type="password" id="pass" name="password" minlength="8" required aria-required="true"><br><br>
-             <label for="pass">Confirm password:</label>
+             <label for="pass"><span aria-hidden="true" class="required">*</span>Confirm password:</label>
              <input type="password" id="confirmPass" name="password" minlength="8" required aria-required="true">
         </fieldset><br>
         <fieldset>
