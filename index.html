@@ -10,17 +10,17 @@
 <body>
 <header>
     <nav>
-        <h1 class="navbrand"><img src="" alt="airline logo"></h1>
+        <h1 class="navbrand"><img src="./aa-logo.png" alt="airline logo"></h1>
         <ul>
             <li><a href ="http://web.simmons.edu/~menzin/CS321/Unit_2_JavaScript_and_HTML_Forms/Chapter_4_Forms_and_Event_Handlers/"  target="_blank">Go to CS321 Chapter 4 Table of Contents</a></li>
             <li><a href ="https://github.com/Ulam22/CS321_FormValidation" target="_blank">Go to Project Repository</a></li>
         </ul>
     </nav>
 </header>
-<main>
-<h1>Create your Account to recieve Frequent Flyer Miles</h1>
+<main><div class="container">
+<h1 class="title">Create your Account to recieve Frequent Flyer Miles</h1>
 
-    <div class="container">
+    
     
     <form id="CreateAccount" method="post">
     <fieldset>
@@ -160,8 +160,11 @@
          <label for="check3">Save seat preferences</label><br>
 
         </fieldset> <br>
-        <input type="submit" type="button" value="Create Account">
-        </select>
-    </form></div></main>
+        <div class="btn-container">
+        <input type="submit" type="button" value="Create Account" class="btn">
+        </select></div>
+    </form>
+</div>
+</main>
 </body>
 </html>
