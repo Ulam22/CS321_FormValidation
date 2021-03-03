@@ -10,18 +10,17 @@
 <body>
 <header>
     <nav>
-        <h1 class="navbrand"><img src="./aa-logo.png" alt="airline logo"></h1>
+        <h1 class="navbrand"><img src="" alt="airline logo"></h1>
         <ul>
-            <li>Group 3's workflow:</li>
-            <li><a href ="https://docs.google.com/document/d/1YK8Cq6o9L70t9Wto31Hj_mCAFBjTy_5IRvR0frBMNMc/edit?usp=sharing"  target="_blank">Project Document</a></li>
-            <li><a href ="https://github.com/Ulam22/CS321_FormValidation" target="_blank">Project Repository</a></li>
+            <li><a href ="http://web.simmons.edu/~menzin/CS321/Unit_2_JavaScript_and_HTML_Forms/Chapter_4_Forms_and_Event_Handlers/"  target="_blank">Go to CS321 Chapter 4 Table of Contents</a></li>
+            <li><a href ="https://github.com/Ulam22/CS321_FormValidation" target="_blank">Go to Project Repository</a></li>
         </ul>
     </nav>
 </header>
-<main><div class="container">
-<h1 class="title">Create your Account to recieve Frequent Flyer Miles</h1>
+<main>
+<h1>Create your Account to recieve Frequent Flyer Miles</h1>
 
-    
+    <div class="container">
     
     <form id="CreateAccount" method="post">
     <fieldset>
@@ -41,20 +40,20 @@
                 <label for="Rev">Rev. </label>
                 <input type="radio" id="NA" name="prefix" value="NA">
                 <label for="NA">N/A </label> <br></br>
-        <label for="firstName">First name:<span aria-hidden="true" class="required">*</span> </label><input type="text" id="first" required aria-required="true"><br><br>
+        <label for="firstName"><span aria-hidden="true" class="required">*</span>First name: </label><input type="text" id="first" required aria-required="true"><br><br>
         <label for="preferredName">Preferred Name: </label><input type="text" id="preferred"><br><br>
-        <label for="lastName">Last name:<span aria-hidden="true" class="required">*</span></label><input type="text" id="last" required aria-required="true"><br><br>
+        <label for="lastName"><span aria-hidden="true" class="required">*</span>Last name: </label><input type="text" id="last" required aria-required="true"><br><br>
         <!-- the age input is simply for number validation purposes -->
         <label for="age">Age: </label><input type="text" id="age"><br><br>
-        <label for="phone">Phone number:<span aria-hidden="true" class="required">*</span></label><input type="tel" id="phone" required aria-required="true"><br><br>
-        <label for="dob">Date of birth:<span aria-hidden="true" class="required">*</span></label>
+        <label for="phone">Phone number: </label><input type="tel" id="phone" required aria-required="true"><br><br>
+        <label for="dob"><span aria-hidden="true" class="required">*</span>Date of birth:</label>
         <input type="date" id="dob" name="dob"
         value="2000-01-01"
         min="1900-01-01" max="2018-01-01" required aria-required="true"><br><br>
 
-        <label for="address">Home address:<span aria-hidden="true" class="required">*</span></label>
+        <label for="address"><span aria-hidden="true" class="required">*</span>Home address:</label>
         <input type="text" id="address" aria-required="true"><br><br>
-        State/Province: <span aria-hidden="true" class="required">*</span>
+        <span aria-hidden="true" class="required">*</span>State/Province: 
         <select>
             <optgroup label="State">
             <option value="AL">Alabama</option>
@@ -125,7 +124,7 @@
             <option value="YT">Yukon</option>
             </optgroup>
         </select><br><br>
-        Country: <span aria-hidden="true" class="required">*</span>
+        <span aria-hidden="true" class="required">*</span>Country: 
         <select>
             <option value="US">United States</option>
             <option value="Canada">Canada</option>
@@ -133,13 +132,15 @@
         </fieldset> <br>
 <fieldset>
         <h1>Account Information</h1>
-            <label for="accountEmail">Enter your email:<span aria-hidden="true" class="required">*</span></label>
+            <label for="accountEmail"><span aria-hidden="true" class="required">*</span>Enter your email:</label>
             <input type="email" id="email"
                     size="30" required aria-required="true"><br></br>
-             <label for="pass">Password<span aria-hidden="true" class="required">*</span> (8 characters minimum):</label>
-             <input type="password" id="pass" name="password" minlength="8" required aria-required="true"><br><br>
-             <label for="pass">Confirm password:<span aria-hidden="true" class="required">*</span></label>
-             <input type="password" id="confirmPass" name="password" minlength="8" required aria-required="true">
+             <label for="pass"><span aria-hidden="true" class="required">*</span>Password (8 characters minimum):
+             <input type="password" id="pass" name="password" minlength="8" required aria-required="true" onkeyup='check();'></label><br><br>
+             <label for="pass"><span aria-hidden="true" class="required">*</span>Confirm password:
+             <input type="password" id="confirmPass" name="password" minlength="8" required aria-required="true" onkeyup='check();'>
+             <span id='message'></span>
+            </label>
         </fieldset><br>
         <fieldset>
             <h1>Preferences</h1>
@@ -161,11 +162,8 @@
          <label for="check3">Save seat preferences</label><br>
 
         </fieldset> <br>
-        <div class="btn-container">
-        <input type="submit" type="button" value="Create Account" class="btn">
-        </select></div>
-    </form>
-</div>
-</main>
+        <input type="submit" type="button" value="Create Account" >
+        </select>
+    </form></div></main>
 </body>
 </html>
