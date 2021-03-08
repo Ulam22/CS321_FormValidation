@@ -19,10 +19,11 @@ View our [Planning Document](https://docs.google.com/document/d/1YK8Cq6o9L70t9Wt
 - Added in regex patterns to confirm input for phone numbers and home address 
 - Styling the form to somewhat resemble American Airlines
 
-![popup](https://user-images.githubusercontent.com/67839745/110392602-33782300-8037-11eb-8049-669aee179d00.jpg)
 
 ### What didn't work
 I think everything worked out well in the end. We were able to add in visual cues for missing information but also didn't rely on color to notify users about any invalid inputs.
+
+![popup](https://user-images.githubusercontent.com/67839745/110392602-33782300-8037-11eb-8049-669aee179d00.jpg)
 
 ### Challenges
 Validating Canadian and American zipcodes with regex, but we found a response in stack overflow that helped solve that issue.
