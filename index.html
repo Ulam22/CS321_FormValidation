@@ -47,14 +47,14 @@
         <label for="lastName"><span aria-hidden="true" class="required">*</span>Last name: <input type="text" id="last" required aria-required="true"></label><br><br>
         <!-- the age input is simply for number validation purposes -->
         <label for="age">Age: <input type="text" id="age"></label><br><br>
-        <label for="phone"><span aria-hidden="true" class="required">*</span>Phone number: <input type="tel" id="phone" required aria-required="true"></label><br><br>
+        <label for="phone"><span aria-hidden="true" class="required">*</span>Phone number: <input type="tel" id="phone" required aria-required="true" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"></label><br><br>
         <label for="dob"><span aria-hidden="true" class="required">*</span>Date of birth:
         <input type="date" id="dob" name="dob"
         value="2000-01-01"
         min="1900-01-01" max="2018-01-01" required aria-required="true"></label><br><br>
 
         <label for="address"><span aria-hidden="true" class="required">*</span>Home address:
-        <input type="text" id="address" aria-required="true"><br><br>
+        <input type="text" id="address" aria-required="true"  pattern="^\d+\s[A-z]+\s[A-z]+"><br><br>
         <span aria-hidden="true" class="required">*</span>State/Province: 
         <select>
             <optgroup label="State">
