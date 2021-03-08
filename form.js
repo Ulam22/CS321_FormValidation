@@ -3,7 +3,7 @@ const firstName = document.getElementById('first')
 const password = document.getElementById('pass')
 const errorMessage = document.getElementById('errorMessage')
 
-document.getElementById('submit-btn').addEventListener('submit', (e) => {
+form.addEventListener('onClick', (e) => {
   let message = []
 
   if (password.value === 'password') {
