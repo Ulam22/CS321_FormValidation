@@ -23,7 +23,7 @@ main {
 .container {
     border: 1px solid black;
     padding:1rem 2rem;
-    border-radius:8px;
+    border-radius:3px;
     background-color: rgb(255, 255, 255);
 }
 nav {

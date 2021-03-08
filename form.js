@@ -5,19 +5,19 @@ const errorMessage = document.getElementById('errorMessage')
 
 
 form.addEventListener('submit', (e) => {
-  let messages = []
+  let message = []
   if (firstName.value === '' || firstName.value == null) {
-    messages.push('Name is required')
+    message.push('Name is required')
   }
   if (password.value === 'password') {
-    messages.push('Password cannot be password')
+    message.push('Password cannot be password')
   }
   if (password.length <= 7) {
-    messages.push('Password cannot be less than 8 characters')
+    message.push('Password cannot be less than 8 characters')
   }
-  if (messages.length > 0) {
+  if (message.length > 0) {
     e.preventDefault()
-    errorElement.innerText = messages.join(', ')
+    errorElement.innerText = message.join(', ')
   }
 
    if (document.getElementById('pass').value ==
@@ -33,3 +33,4 @@ form.addEventListener('submit', (e) => {
  }
 
 )
+console.log('success!')
