@@ -1,6 +1,9 @@
 function checkZip(str) {
-  return /^\d{5}(-\d{4})?$/.test(str);
+if (document.querySelector)
+    return /^[0-9]{5}$|^[A-Z][0-9][A-Z] ?[0-9][A-Z][0-9]$/.test(str); 
 }
+  
+
 function validateInput() 
 {
   console.log("validateInput");
@@ -9,10 +12,13 @@ function validateInput()
   if (checkZip(zipCode)) 
   {
     message = "Valid Zip Code";
+    document.getElementById("msg").style.color = 'green';
   } else {
     message = "Invalid Zip Code";
+    document.getElementById("msg").style.color = 'red';
   }
   document.getElementById("msg").innerHTML = message;
+  
 }
 function check(){
   if (document.getElementById('pass').value ==
