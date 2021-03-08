@@ -10,15 +10,11 @@ function () {
 
 form.addEventListener('submit', (e) => {
   let message = []
-  if (firstName.value === '' || firstName.value == null) {
-    message.push('Name is required')
-  }
+
   if (password.value === 'password') {
     message.push('Password cannot be password')
   }
-  if (password.length <= 7) {
-    message.push('Password cannot be less than 8 characters')
-  }
+  
   if (message.length > 0) {
     e.preventDefault()
     errorMessage.innerText = message.join(', ')
