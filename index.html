@@ -47,7 +47,7 @@
         <label for="lastName"><span aria-hidden="true" class="required">*</span>Last name: <input type="text" id="last" required aria-required="true"></label><br><br>
         <!-- the age input is simply for number validation purposes -->
         <label for="age">Age: <input type="text" id="age"></label><br><br>
-        <label for="phone">Phone number: <input type="tel" id="phone" required aria-required="true"></label><br><br>
+        <label for="phone"><span aria-hidden="true" class="required">*</span>Phone number: <input type="tel" id="phone" required aria-required="true"></label><br><br>
         <label for="dob"><span aria-hidden="true" class="required">*</span>Date of birth:
         <input type="date" id="dob" name="dob"
         value="2000-01-01"
@@ -164,7 +164,7 @@
          <label for="check3">Save seat preferences</label><br>
 
         </fieldset> <br>
-        <button type="submit">Create Account</button>
+        <button type="submit" onclick = checkFields()>Create Account</button>
         <div id="errorMessage"></div>
     </form>
 </div></main>
