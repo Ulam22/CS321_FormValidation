@@ -3,6 +3,10 @@ const firstName = document.getElementById('first')
 const password = document.getElementById('pass')
 const errorMessage = document.getElementById('errorMessage')
 
+//might just delete all this
+window.onload = {
+function () {
+
 
 form.addEventListener('submit', (e) => {
   let message = []
@@ -17,8 +21,10 @@ form.addEventListener('submit', (e) => {
   }
   if (message.length > 0) {
     e.preventDefault()
-    errorElement.innerText = message.join(', ')
+    errorMessage.innerText = message.join(', ')
   }
+ //^ might just delete all this
+
 
    if (document.getElementById('pass').value ==
      document.getElementById('confirmPass').value) {
@@ -31,7 +37,5 @@ form.addEventListener('submit', (e) => {
      return false;
    }
  }
-
-)
-console.log('success!')
-
+)}
+}
