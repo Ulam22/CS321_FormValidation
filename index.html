@@ -10,7 +10,7 @@
 <body>
 <header>
     <nav>
-        <h1 class="navbrand"><img src="" alt="airline logo"></h1>
+        <h1 class="navbrand"><img src="./aa-logo.png" alt="airline logo"></h1>
         <ul>
             <li><a href ="http://web.simmons.edu/~menzin/CS321/Unit_2_JavaScript_and_HTML_Forms/Chapter_4_Forms_and_Event_Handlers/"  target="_blank">Go to CS321 Chapter 4 Table of Contents</a></li>
             <li><a href ="https://github.com/Ulam22/CS321_FormValidation" target="_blank">Go to Project Repository</a></li>
@@ -22,7 +22,7 @@
 
     <div class="container">
     
-    <form id="CreateAccount" method="post">
+    <form id="CreateAccount"  action="/" method="GET">
     <fieldset>
     <h1>Personal Information</h1>
         <label for="prefix">Prefix: </label> 
@@ -40,7 +40,8 @@
                 <label for="Rev">Rev. </label>
                 <input type="radio" id="NA" name="prefix" value="NA">
                 <label for="NA">N/A </label> <br></br>
-        <label for="firstName"><span aria-hidden="true" class="required">*</span>First name: </label><input type="text" id="first" required aria-required="true"><br><br>
+        <label for="firstName"><span aria-hidden="true" class="required">*</span>First name: </label>
+        <input type="text" id="first" required aria-required="true"><br><br>
         <label for="preferredName">Preferred Name: </label><input type="text" id="preferred"><br><br>
         <label for="lastName"><span aria-hidden="true" class="required">*</span>Last name: </label><input type="text" id="last" required aria-required="true"><br><br>
         <!-- the age input is simply for number validation purposes -->
@@ -162,8 +163,10 @@
          <label for="check3">Save seat preferences</label><br>
 
         </fieldset> <br>
-        <input type="submit" type="button" value="Create Account" >
-        </select>
-    </form></div></main>
+        <button type="submit">Create Account
+        </button>
+    </form>
+    <div id="errorMessage"></div>
+</div></main>
 </body>
 </html>
