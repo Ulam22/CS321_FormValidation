@@ -1,23 +1,4 @@
-let form = document.getElementById('CreateAccount')
-const firstName = document.getElementById('first')
-const password = document.getElementById('pass')
-const errorMessage = document.getElementById('errorMessage')
-
-function validate() {
-  let messages = []
-
-  if (password.value === 'password') {
-    return messages.push('Password cannot be password')
-  }
-
-  if (messages.length > 0) {
-    e.preventDefault()
-    errorMessage.innerText = messages.join(', ')
-  }
- //^ might just delete all this
-
-  console.log(alert('success'))
-}
+let age = document.getElementById('age')
 
 
 function passwordMatch() {
