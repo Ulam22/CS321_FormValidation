@@ -1,4 +1,3 @@
-let age = document.getElementById('age')
 
 
 function passwordMatch() {
