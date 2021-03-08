@@ -83,7 +83,7 @@ function check(){
       window.alert("Please enter your password");  
       return false; 
   }
-    window.alert("From successfully submitted"); 
+    window.alert("Form successfully submitted"); 
     return true;
      
   } 
