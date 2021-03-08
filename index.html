@@ -42,11 +42,10 @@
                 
                 <label for="NA">N/A </label> <br></br>
         <label for="firstName"><span aria-hidden="true" class="required">*</span>First name:
-        <input type="text" id="first" required aria-required="true"> </label><br><br>
+        <input type="text" id="first" required aria-required="true" placeholder="First Name"> </label><br><br>
         <label for="preferredName">Preferred Name: <input type="text" id="preferred"></label><br><br>
-        <label for="lastName"><span aria-hidden="true" class="required">*</span>Last name: <input type="text" id="last" required aria-required="true"></label><br><br>
-        <!-- the age input is simply for number validation purposes -->
-        <label for="age">Age: <input type="text" id="age"></label><br><br>
+        <label for="lastName"><span aria-hidden="true" class="required">*</span>Last name: <input type="text" id="last" required aria-required="true" placeholder="Last Name"></label><br><br>
+       
         <label for="phone"><span aria-hidden="true" class="required">*</span>Phone number: <input type="tel" id="phone" required aria-required="true" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"></label><br><br>
         <label for="dob"><span aria-hidden="true" class="required">*</span>Date of birth:
         <input type="date" id="dob" name="dob"
@@ -130,7 +129,11 @@
         <select>
             <option value="US">United States</option>
             <option value="Canada">Canada</option>
-        </select></label><br><br>
+        </select></label><br><br> 
+        <label for="zipCode">Zip Code: <input type="text" id="zipCode" onKeyUp="validateInput()"  placeholder="Zip Code"/>
+
+           </label> <div id="msg" ><br><br>
+<br>
         </fieldset> <br>
 <fieldset>
         <h1>Account Information</h1>

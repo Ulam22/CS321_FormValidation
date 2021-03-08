@@ -1,6 +1,19 @@
-
-
-
+function checkZip(str) {
+  return /^\d{5}(-\d{4})?$/.test(str);
+}
+function validateInput() 
+{
+  console.log("validateInput");
+  let zipCode = document.getElementById("zipCode").value;
+  let message = "";
+  if (checkZip(zipCode)) 
+  {
+    message = "Valid Zip Code";
+  } else {
+    message = "Invalid Zip Code";
+  }
+  document.getElementById("msg").innerHTML = message;
+}
 function check(){
   if (document.getElementById('pass').value ==
   document.getElementById('confirmPass').value) {
@@ -13,7 +26,7 @@ function check(){
   return false;
   }
   }
-  
+
   function checkFields() { 
     if (document.getElementById('first').value == "")  { 
         window.alert("Please enter your first name."); 
@@ -55,3 +68,4 @@ function check(){
     return true;
      
   } 
+ 
