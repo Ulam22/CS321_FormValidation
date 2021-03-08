@@ -1,25 +1,5 @@
-const form = document.getElementById('CreateAccount')
-const firstName = document.getElementById('first')
-const password = document.getElementById('pass')
-const errorMessage = document.getElementById('errorMessage')
+let age = document.getElementById('age')
 
-form.addEventListener('onClick', (e) => {
-  let message = []
-
-  if (password.value === 'password') {
-    return message.push('Password cannot be password')
-  }
-
-  if (message.length > 0) {
-    e.preventDefault()
-    errorMessage.innerText = message.join(', ')
-  }
- //^ might just delete all this
-
-
-  
- }
-)
 
 function passwordMatch() {
    if (document.getElementById('pass').value ==
@@ -83,7 +63,7 @@ function check(){
       window.alert("Please enter your password");  
       return false; 
   }
-    window.alert("From successfully submitted"); 
+    window.alert("Form successfully submitted"); 
     return true;
      
   } 
