@@ -1,25 +1,24 @@
-const form = document.getElementById('CreateAccount')
+let form = document.getElementById('CreateAccount')
 const firstName = document.getElementById('first')
 const password = document.getElementById('pass')
 const errorMessage = document.getElementById('errorMessage')
 
-form.addEventListener('onClick', (e) => {
-  let message = []
+function validate() {
+  let messages = []
 
   if (password.value === 'password') {
-    return message.push('Password cannot be password')
+    return messages.push('Password cannot be password')
   }
 
-  if (message.length > 0) {
+  if (messages.length > 0) {
     e.preventDefault()
-    errorMessage.innerText = message.join(', ')
+    errorMessage.innerText = messages.join(', ')
   }
  //^ might just delete all this
 
+  console.log(alert('success'))
+}
 
-  
- }
-)
 
 function passwordMatch() {
    if (document.getElementById('pass').value ==
