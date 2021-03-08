@@ -5,6 +5,8 @@
 **Semester**: Spring 2021
 <br>
 **Languages used**: HTML, CSS, Javascript
+<br>
+[Try our project](https://ulam22.github.io/CS321_FormValidation/ )
 
 ## Planning Document
 View our [Planning Document](https://docs.google.com/document/d/1YK8Cq6o9L70t9Wto31Hj_mCAFBjTy_5IRvR0frBMNMc/edit?usp=sharing) to get a detailed look into our process
@@ -33,5 +35,5 @@ Validating Canadian and American zipcodes with regex, but we found a response in
 
 
 ## Links
-- Final Form:[Try our project](https://ulam22.github.io/CS321_FormValidation/ )
+- Final Form: [Try our project](https://ulam22.github.io/CS321_FormValidation/ )
 - [Chapter 4 Table of Contents](http://web.simmons.edu/~menzin/CS321/Unit_2_JavaScript_and_HTML_Forms/Chapter_4_Forms_and_Event_Handlers/)
